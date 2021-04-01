@@ -1,0 +1,25 @@
+Google Sheet : https://docs.google.com/spreadsheets/d/1K28GiecGHFUtVbpyMWW57XLGAQqLs80CNO21rNb-01o/edit?usp=sharing
+
+API URL: https://api.apispreadsheets.com/data/10322/
+
+LINK : https://www.apispreadsheets.com/upload
+
+To update data: You need to include a JSON encoded BODY. It needs to be in the format specified along with a Query. 
+The Query will dictate which rows to update. You will get a status code of 201 if your rows were successfully updated
+
+JSON BODY: 
+{
+  "data": {
+    "title": "",
+    "fullname": "",
+    "gender": "",
+    "dateofbirth": "",
+    "mobile": "",
+    "email": "",
+    "address": "",
+    "city": "",
+    "state": "",
+    "zip": ""
+  },
+  "query": "select*from10322wheretitle=''"
+}
